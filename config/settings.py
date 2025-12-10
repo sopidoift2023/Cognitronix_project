@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y7+9oj^g@e%sc@$-!upkf#gozg&-m08q&j9d54h2$!om#(vrrw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    "cognitronix20.onrender.com",
+    'cognitronix20.onrender.com',
     'cognitronix20.com',
     'cognitronix-project-1.onrender.com',
     'localhost',
