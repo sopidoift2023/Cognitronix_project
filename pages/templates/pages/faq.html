@@ -1,0 +1,329 @@
+<!-- templates/pages/faq.html -->
+{% extends "pages/base.html" %}
+
+{% block title %}FAQ - CognitronixTechnology{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="pt-20 pb-16 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">
+            Frequently Asked <span class="gradient-text">Questions</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Everything you need to know about becoming an AI trainer with CognitronixTechnology
+        </p>
+    </div>
+</section>
+
+<!-- FAQ Categories -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <!-- Category Navigation -->
+            <div class="flex flex-wrap gap-4 mb-12 justify-center">
+                <button class="faq-category-btn active px-6 py-3 rounded-lg bg-blue-600 text-white font-medium" data-category="all">
+                    All Questions
+                </button>
+                <button class="faq-category-btn px-6 py-3 rounded-lg bg-gray-100 text-gray-700 font-medium hover:bg-gray-200" data-category="getting-started">
+                    Getting Started
+                </button>
+                <button class="faq-category-btn px-6 py-3 rounded-lg bg-gray-100 text-gray-700 font-medium hover:bg-gray-200" data-category="earnings">
+                    Earnings & Payments
+                </button>
+                <button class="faq-category-btn px-6 py-3 rounded-lg bg-gray-100 text-gray-700 font-medium hover:bg-gray-200" data-category="tasks">
+                    Tasks & Work
+                </button>
+                <button class="faq-category-btn px-6 py-3 rounded-lg bg-gray-100 text-gray-700 font-medium hover:bg-gray-200" data-category="support">
+                    Support
+                </button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="getting-started">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">What is AI training?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700 mb-4">
+                            AI training involves providing labeled data and feedback to machine learning models
+                            so they can learn patterns and make accurate predictions. As an AI trainer, you'll
+                            help improve AI systems by completing various annotation and evaluation tasks.
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 text-sm">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                No technical background required - we provide all necessary training!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="getting-started">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">Do I need technical experience?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700">
+                            No technical experience is required! We provide comprehensive training for all tasks.
+                            You only need basic computer skills, attention to detail, and a willingness to learn.
+                            Our platform is designed to be user-friendly for everyone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="earnings">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">How much can I earn?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700 mb-4">
+                            Earnings vary based on task complexity and the time you dedicate. Most trainers earn
+                            between $15-$30 per hour. Payments are made regularly via secure methods like PayPal
+                            or bank transfer.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mt-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="text-sm text-gray-600 mb-1">Entry Level</div>
+                                <div class="text-lg font-bold text-green-600">$15-20/hr</div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="text-sm text-gray-600 mb-1">Experienced</div>
+                                <div class="text-lg font-bold text-green-600">$20-30/hr</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="getting-started">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">What are the requirements?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700 mb-4">
+                            You need a reliable internet connection, a computer or smartphone, and proficiency in
+                            English (other languages are a plus). You must be at least 18 years old.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Reliable internet connection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Computer or smartphone</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt=1 mr-3"></i>
+                                <span>English proficiency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt=1 mr-3"></i>
+                                <span>18+ years old</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="tasks">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">How flexible is the schedule?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700">
+                            Completely flexible! You can work whenever you want, from anywhere. There are no
+                            minimum hours required. Work 2 hours a week or 20 hours - it's entirely up to you.
+                            Tasks are available 24/7, so you can work at your convenience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="support">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">What support do you provide?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700 mb-4">
+                            We provide comprehensive support including:
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-headset text-blue-500 mt-1 mr-3"></i>
+                                <span>24/7 email and chat support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-book text-blue-500 mt=1 mr-3"></i>
+                                <span>Detailed training materials and guides</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-comments text-blue-500 mt=1 mr-3"></i>
+                                <span>Community forums for peer support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-video text-blue-500 mt=1 mr-3"></i>
+                                <span>Video tutorials and webinars</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="earnings">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">How often do I get paid?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700">
+                            Payments are processed weekly for earnings over $20. You can choose to receive payments
+                            via PayPal, bank transfer, or other local payment methods depending on your country.
+                            The minimum payout threshold is $20.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-categories="tasks">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center transition">
+                        <span class="text-lg font-semibold text-gray-800">What types of tasks will I do?</span>
+                        <span class="text-blue-600 text-xl transition-transform">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer p-6 bg-white hidden">
+                        <p class="text-gray-700 mb-4">
+                            You'll work on various AI training tasks including:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-comment-alt text-blue-500 mr-2"></i>
+                                    <span class="font-medium">Text Annotation</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Labeling text for language models</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-image text-purple-500 mr-2"></i>
+                                    <span class="font-medium">Image Classification</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Identifying objects in images</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-robot text-green-500 mr-2"></i>
+                                    <span class="font-medium">AI Response Evaluation</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Rating AI-generated responses</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-search text-orange-500 mr-2"></i>
+                                    <span class="font-medium">Data Verification</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Checking data accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Still Have Questions -->
+<section class="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Still have questions?</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                Our support team is here to help you get started and succeed as an AI trainer.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:support@cresswelltech.com" class="btn-primary">
+                    <i class="fas fa-envelope mr-2"></i> Email Support
+                </a>
+                <a href="{% url 'join' %}" class="btn-secondary">
+                    <i class="fas fa-user-plus mr-2"></i> Join Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block extra_js %}
+<script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+
+            // Toggle answer visibility
+            answer.classList.toggle('hidden');
+
+            // Rotate icon
+            if (answer.classList.contains('hidden')) {
+                icon.className = 'fas fa-chevron-down';
+            } else {
+                icon.className = 'fas fa-chevron-up';
+            }
+        });
+    });
+
+    // FAQ Category Filter
+    document.querySelectorAll('.faq-category-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+
+            // Update active button
+            document.querySelectorAll('.faq-category-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+
+            button.classList.remove('bg-gray-100', 'text-gray-700');
+            button.classList.add('active', 'bg-blue-600', 'text-white');
+
+            // Filter FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const categories = item.getAttribute('data-categories');
+
+                if (category === 'all' || categories.includes(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}
+{% endblock %}

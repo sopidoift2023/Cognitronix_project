@@ -1,0 +1,270 @@
+<!-- templates/pages/home.html -->
+{% extends "pages/base.html" %}
+
+{% block title %}AI Training Platform - Cognitronix Technology{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white section-padding">
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div class="absolute top-40 right-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-40 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                The Future of <span class="gradient-text">AI</span> is Human
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Join us in creating a more relevant, trustworthy, and truthful AI,
+                all while earning on your own terms.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'join' %}" class="btn-primary">
+                    <i class="fas fa-rocket mr-2"></i> Join our AI Training Team
+                </a>
+                <a href="{% url 'how_it_works' %}" class="btn-secondary">
+                    <i class="fas fa-play-circle mr-2"></i> See How It Works
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="container mx-auto px-6 mt-16">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-effect rounded-2xl p-6 text-center">
+                <div class="text-3xl font-bold mb-2">5,000+</div>
+                <div class="text-gray-300">AI Trainers</div>
+            </div>
+            <div class="glass-effect rounded-2xl p-6 text-center">
+                <div class="text-3xl font-bold mb-2">100K+</div>
+                <div class="text-gray-300">Tasks Completed</div>
+            </div>
+            <div class="glass-effect rounded-2xl p-6 text-center">
+                <div class="text-3xl font-bold mb-2">50+</div>
+                <div class="text-gray-300">Countries</div>
+            </div>
+            <div class="glass-effect rounded-2xl p-6 text-center">
+                <div class="text-3xl font-bold mb-2">24/7</div>
+                <div class="text-gray-300">Support</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Innovation Partner Section -->
+<section class="section-padding bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    Right Partner for <span class="gradient-text">AI Innovation</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    CognitronixTechnology drives progress in AI innovation. Human insight meets intelligent systems
+                    to power smarter solutions. Shaping the future of technology, accurate, ethical, and impactful.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Experience</h3>
+                                <p class="text-gray-600">
+                                    Engage in real-world AI training tasks that offer hands-on learning and growth.
+                                    Build valuable experience while contributing to cutting-edge advancements in artificial intelligence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Quick Support</h3>
+                                <p class="text-gray-600">
+                                    CognitronixTechnology ensures fast assistance to keep your workflow smooth and uninterrupted.
+                                    Efficiency and reliability—because your time matters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image/Illustration -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8">
+                        <div class="aspect-square bg-white rounded-2xl shadow-xl flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-brain text-white text-5xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Human-AI Collaboration</h3>
+                                <p class="text-gray-600">Where human intelligence meets artificial intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Paid Section -->
+<section class="section-padding bg-gradient-to-br from-blue-50 to-purple-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                        Contribute to tomorrow's <span class="gradient-text">AI</span>, and get paid for it.
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Complete flexible online tasks that support the development of smarter AI systems on your own schedule.
+                        Gain practical, hands-on experience in training AI models while working from anywhere.
+                        With Cresswell, you play a key role in improving tomorrow's technology through meaningful, remote work opportunities.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="{% url 'register' %}" class="btn-primary">
+                            <i class="fas fa-user-plus mr-2"></i> Get Started Free
+                        </a>
+                        <a href="{% url 'how_it_works' %}" class="btn-secondary">
+                            <i class="fas fa-info-circle mr-2"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right - Benefits -->
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white rounded-2xl p-6 card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-money-check-alt text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Competitive Pay</h3>
+                        </div>
+                        <p class="text-gray-600">Earn $15-$30 per hour based on task complexity</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Flexible Hours</h3>
+                        </div>
+                        <p class="text-gray-600">Work whenever you want, no minimum hours required</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-globe-americas text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Work Anywhere</h3>
+                        </div>
+                        <p class="text-gray-600">Remote opportunities available worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Task Types -->
+<section class="section-padding bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Types of AI Training Tasks</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">Diverse opportunities to match your skills and interests</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover text-center">
+                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-comment-alt text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Text Annotation</h3>
+                <p class="text-gray-600">Label and categorize text data for natural language processing</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover text-center">
+                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-image text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Image Classification</h3>
+                <p class="text-gray-600">Identify objects in images for computer vision models</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover text-center">
+                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-robot text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">AI Response Evaluation</h3>
+                <p class="text-gray-600">Rate and provide feedback on AI-generated responses</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 card-hover text-center">
+                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Data Verification</h3>
+                <p class="text-gray-600">Verify accuracy of information used to train AI systems</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Ready to Shape the Future of AI?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
+            Join thousands of AI trainers worldwide and start earning while contributing to groundbreaking AI development.
+        </p>
+        <a href="{% url 'register' %}" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition duration-300 inline-block">
+            <i class="fas fa-play mr-2"></i> Start Your Journey Today
+        </a>
+    </div>
+</section>
+
+<style>
+    @keyframes blob {
+        0% {
+            transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+            transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+            transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+            transform: translate(0px, 0px) scale(1);
+        }
+    }
+
+    .animate-blob {
+        animation: blob 7s infinite;
+    }
+
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+</style>
+{% endblock %}
