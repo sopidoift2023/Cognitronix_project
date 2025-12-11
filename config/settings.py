@@ -28,10 +28,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'cognitronix20.onrender.com',
-    'cognitronix20.com',
     'cognitronix-project-1.onrender.com',
     'localhost',
     '127.0.0.1',
+    'cog-nitro-nix.com',
+    'www.cog-nitro-nix.com',
+    
 ]
 
 
