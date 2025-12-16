@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.http import HttpResponse
 
 
 def home(request):
@@ -152,3 +153,6 @@ def join(request):
             return redirect('home')
 
     return render(request, 'pages/join.html', context)
+
+def show_host (request) :
+    return HttpResponse(f" Host header receviced: <strong>{request.get_host()}</strong>")
