@@ -31,8 +31,8 @@ ALLOWED_HOSTS = [
     'cognitronix-project-1.onrender.com',
     'localhost',
     '127.0.0.1',
-    'cog-nitro-nix.com',
-    'www.cog-nitro-nix.com',
+    'www.cocognitronix.cc'
+    'cognitronix.cc
     
 ]
 
